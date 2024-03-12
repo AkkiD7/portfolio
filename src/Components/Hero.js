@@ -1,5 +1,8 @@
 import React, { useRef, useEffect } from "react";
 import Typed from "typed.js";
+import githubLogo from './github.png'
+import linkdeinLogo from './linkdein.png'
+
 
 export default function Hero() {
   const el = useRef(null);
@@ -41,11 +44,11 @@ export default function Hero() {
               <button className="resume-button" onClick={handleResumeDownload}>
                 Download Resume
               </button>
-              <a href="https://github.com/AkkiD7" target="_blank">
-                <img src="./icons8-github-50.png"></img>
+              <a href="https://github.com/AkkiD7" target="_blank" rel="noopener noreferrer">
+                <img src={githubLogo} alt="github"></img>
               </a>
-              <a href="https://linkedin.com/in/akkid7" target="_blank">
-                <img src="./icons8-linkedin-50.png"></img>
+              <a href="https://linkedin.com/in/akkid7" target="_blank" rel="noopener noreferrer">
+                <img src={linkdeinLogo} alt="linkedin"></img>
               </a>
             </div>
             <div className="tech-stack">

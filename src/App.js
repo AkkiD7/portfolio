@@ -13,9 +13,6 @@ function App() {
     "Hello👋",
     "नमस्ते🙏",
     "नमस्कार🙏",
-    "হয়नमस्ते🙏",
-    "வணக்கம்🙏",
-    "مرحبا🙏",
   ];
 
   const [currentGreetingIndex, setCurrentGreetingIndex] = useState(0);
@@ -27,7 +24,7 @@ function App() {
       timeoutIds.push(
         setTimeout(() => {
           setCurrentGreetingIndex(index);
-        }, index * 300) // Adjust delay here for desired speed (0.2 seconds per greeting)
+        }, index *350) // Adjust delay here for desired speed (0.2 seconds per greeting)
       );
     });
 
